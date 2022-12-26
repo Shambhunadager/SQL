@@ -36,4 +36,57 @@ select*from a right join b on a.id=b.id inner join c on b.id=c.id;
 
 
 
+create table bank_information(id int not null,b_name varchar(40) unique not null,b_id int not null, no_of_customers int not null, loan_status varchar(30) default 'ACTIVE',location varchar(30) not null);
+
+select*from bank_information;
+
+insert into bank_information values(1,'Pavan',501,800,'Active','Domluru');
+insert into bank_information values(2,'Arun',502,700,'Active','BTM');
+insert into bank_information values(3,'Anand',503,500,'Active','Srinagar');
+insert into bank_information values(4,'Shankar',504,900,'Active','JPnagar');
+insert into bank_information values(5,'Ganesh',505,200,'Active','Endranagar');
+insert into bank_information values(6,'Kiran',506,405,'Active','Ejipura');
+insert into bank_information values(7,'Sunil',507,850,'Active','Dopanahalli');
+insert into bank_information values(8,'Halesh',508,650,'Active','RRnagar');
+insert into bank_information values(9,'Lokesh',509,550,'Active','MGRoad');
+insert into bank_information values(10,'Ramesh',510,720,'Active','Madiwal');
+
+
+create table cust_information(id int not null,c_name varchar(30) not null,balance bigint not null,c_id int not null,b_id int not null,c_location varchar(30));
+
+select*from cust_information;
+
+insert into cust_information values(1,'Shiva',2000,701,501,'Bommanahalli');
+insert into cust_information values(2,'Naveen',5000,702,502,'SilkBoad');
+insert into cust_information values(3,'Basavaraja',8000,703,503,'Halasuru');
+insert into cust_information values(4,'Ravi',3000,704,504,'Whitefield');
+insert into cust_information values(5,'Santosh',8000,705,505,'Electroncity');
+insert into cust_information values(6,'Manju',6000,706,506,'KGhalli');
+insert into cust_information values(7,'Praveen',9000,707,507,'Sanjaynagar');
+insert into cust_information values(8,'Rakesh',7000,708,511,'Yashavanthapura');
+insert into cust_information values(9,'Varun',1000,709,512,'Banavagudi');
+insert into cust_information values(10,'Shridhar',2500,710,513,'RajaRajinagar');
+
+
+create table loan_information(id int not null,loan_type varchar(40),loan_amount bigint not null,c_id int not null);
+
+select*from loan_information;
+
+insert into loan_information values(1,'HomeLoan',50000,711 );
+insert into loan_information values(2,'CrapLoan',200000,712);
+insert into loan_information values(3,'EductionLoan',500000,713);
+insert into loan_information values(4,'CarLoan',300000,714);
+insert into loan_information values(5,'GoldLoan',100000,701);
+insert into loan_information values(6,'BikeLoan',50000,702);
+insert into loan_information values(7,'TractraLoan',1000000,703);
+insert into loan_information values(8,'AutoLoan',20000,704);
+insert into loan_information values(9,'JobLoan',30000,705);
+insert into loan_information values(10,'FieldLoan',400000,706);
+
+
+
+
+
+
+
 
