@@ -40,17 +40,17 @@ create table bank_information(id int not null,b_name varchar(40) unique not null
 
 select*from bank_information;
 
-insert into bank_information values(1,'Pavan',501,800,'Active','Domluru');
-insert into bank_information values(2,'Arun',502,700,'Active','BTM');
-insert into bank_information values(3,'Anand',503,500,'Active','Srinagar');
-insert into bank_information values(4,'Shankar',504,900,'Active','JPnagar');
-insert into bank_information values(5,'Ganesh',505,200,'Active','Endranagar');
-insert into bank_information values(6,'Kiran',506,405,'Active','Ejipura');
-insert into bank_information values(7,'Sunil',507,850,'Active','Dopanahalli');
-insert into bank_information values(8,'Halesh',508,650,'Active','RRnagar');
-insert into bank_information values(9,'Lokesh',509,550,'Active','MGRoad');
-insert into bank_information values(10,'Ramesh',510,720,'Active','Madiwal');
-
+insert into bank_information values(1,'SBI',501,800,'Active','Domluru');
+insert into bank_information values(2,'KARNATAKA',502,700,'Active','BTM');
+insert into bank_information values(3,'AXIS',503,500,'Active','Srinagar');
+insert into bank_information values(4,'MYSORUBANK',504,900,'Active','JPnagar');
+insert into bank_information values(5,'KVGBANK',505,200,'Active','Endranagar');
+insert into bank_information values(6,'INDIANBANK',506,405,'Active','Ejipura');
+insert into bank_information values(7,'HDFC',507,850,'Active','Dopanahalli');
+insert into bank_information values(8,'ICIC',508,650,'Active','RRnagar');
+insert into bank_information values(9,'KODAK',509,550,'Active','MGRoad');
+insert into bank_information values(10,'CORPOTION',510,720,'Active','Madiwal');
+commit;
 
 create table cust_information(id int not null,c_name varchar(30) not null,balance bigint not null,c_id int not null,b_id int not null,c_location varchar(30));
 
@@ -66,7 +66,7 @@ insert into cust_information values(7,'Praveen',9000,707,507,'Sanjaynagar');
 insert into cust_information values(8,'Rakesh',7000,708,511,'Yashavanthapura');
 insert into cust_information values(9,'Varun',1000,709,512,'Banavagudi');
 insert into cust_information values(10,'Shridhar',2500,710,513,'RajaRajinagar');
-
+commit;
 
 create table loan_information(id int not null,loan_type varchar(40),loan_amount bigint not null,c_id int not null);
 
@@ -82,7 +82,7 @@ insert into loan_information values(7,'TractraLoan',1000000,703);
 insert into loan_information values(8,'AutoLoan',20000,704);
 insert into loan_information values(9,'JobLoan',30000,705);
 insert into loan_information values(10,'FieldLoan',400000,706);
-
+commit;
 
 
 
